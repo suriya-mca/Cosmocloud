@@ -1,0 +1,4 @@
+Dockerfile
+docker-copose.yml
+.dockerignore
+.env
