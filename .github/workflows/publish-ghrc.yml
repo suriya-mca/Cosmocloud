@@ -1,0 +1,17 @@
+name: ghcr image
+
+on:
+  push
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build and push the image
+        env:
+          MONGO_URL: ${{ secrets.MONGO_URL }}
+        run: |
+          docker login --username suriya-mca --password ${{ secrets.GH_WFLOW_DI }} ghcr.io
+          docker build . -t ghcr.io/suriya-mca/lms:latest
+          docker push ghcr.io/suriya-mca/lms:latest

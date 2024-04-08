@@ -11,7 +11,7 @@ async def create_student(student: Student):
     return await create_student_service(student)
 
 @router.get("/students", status_code=200, tags=["lms"])
-async def get_students(country: str, age: int):
+async def get_students(country: str = None, age: int = None):
 
     return await get_students_service(country, age)
 

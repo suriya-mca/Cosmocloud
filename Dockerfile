@@ -15,7 +15,7 @@ COPY . /app
 
 # Install dependencies
 RUN pip install --upgrade pip && \
-	pip install --no-cache-dir --upgrade -r requirements.txt && \
+	pip install --no-cache-dir --upgrade -r requirements.txt
 
 # Expose ports and define startup commands based on selected framework
 EXPOSE 8000
