@@ -12,7 +12,7 @@ This project implements a backend API for managing student records using FastAPI
 
 ## Technologies Used
 
-- FastAPI: A modern, fast (high-performance), web framework for building APIs with Python 3.12.
+- FastAPI: A modern, fast (high-performance), web framework for building APIs with Python 3.7+.
 - MongoDB: A NoSQL database for storing student records.
 
 ## Usage
@@ -42,3 +42,11 @@ Swagger UI documentation for the API is available at `http://localhost:8000/docs
 - `GET /students/{id}`: Fetch a specific student record by ID.
 - `PATCH /students/{id}`: Update a specific student record by ID.
 - `DELETE /students/{id}`: Delete a specific student record by ID.
+
+## Deployment
+
+This project is deployed on Render. You can access the deployed API [here](https://lms-latest.onrender.com/).
+
+## Accessing API Documentation
+
+Swagger UI documentation for the API is available at [https://lms-latest.onrender.com/docs](https://lms-latest.onrender.com/docs).
