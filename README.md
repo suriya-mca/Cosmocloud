@@ -29,7 +29,7 @@ This project implements a backend API for managing student records using FastAPI
     uvicorn main:app --reload
     ```
 
-3. The API will be available at `http://localhost:8000`.
+3. The API will be available at `http://localhost:8000/api/v1`.
 
 ## API Documentation
 
